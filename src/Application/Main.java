@@ -9,18 +9,10 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) {
 
-        Stage stage = new Stage();
 
-        stage.setTitle("Hello");
-        FXMLLoader loader=new FXMLLoader();
-        loader.setLocation(this.getClass().getResource("/Application/MenuScene.fxml"));
-        Parent gridPane = loader.load();
-
-        Scene scene = new Scene(gridPane);
-        stage.setScene(scene);
-        stage.show();
+        MenuSceneController.menuStage.show();
     }
 
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.OptionsSceneController">
+   <center>
+      <ProgressBar prefWidth="200.0" progress="0.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollBar />
+            <ScrollBar />
+            <RadioButton mnemonicParsing="false" text="RadioButton" />
+            <RadioButton mnemonicParsing="false" text="RadioButton" />
+            <ChoiceBox prefWidth="150.0" />
+            <ChoiceBox prefWidth="150.0" />
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <CheckBox mnemonicParsing="false" text="CheckBox" />
+            <CheckBox mnemonicParsing="false" text="CheckBox" />
+            <CheckBox mnemonicParsing="false" text="CheckBox" />
+            <Slider />
+            <Slider />
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#exit_Options" text="Back" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Label text="Options" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>
